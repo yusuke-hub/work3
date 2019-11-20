@@ -1,0 +1,179 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+table {
+  width:850px;
+}
+// トップ画面
+.top {
+  width: 520px;
+  margin: 0 auto;
+}
+.top .welcome {
+  margin-bottom: 0px;
+}
+.app-name {
+  color: black !important;
+  padding-left: 14px;
+}
+.app-name:hover {
+  background-color: none !important;
+}
+.top-text {
+  line-height: 30px;
+}
+.login-1 {
+  background-color: #5bc0de;
+}
+.regisration-3 {
+  background-color: #5cb85c;
+  margin-top: 0px !important;
+}
+.login-1,
+.regisration-3 {
+  color: #666666;
+  display: inline-block !important;
+  width: 490px !important;
+  margin-left: 50px !important;
+}
+.login-1:hover,
+.regisration-3:hover {
+  color: #ffffff !important;
+}
+.login:hover {
+  background-color: #01a9db;
+}
+.regisration-3:hover {
+  background-color: #04b404;
+}
+
+// ナビゲーションバー
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+nav {
+  height: 50px;
+  background-color: #222222;
+}
+.container {
+  margin: auto 185px !important;
+}
+.nav-logo {
+  font-size: 20px;
+  margin-top: 3px;
+  color: #ffffff;
+}
+.fa-home,
+.fa-user,
+.fa-book,
+.fa-sign-in-alt,
+.fa-paperclip,
+.fa-pen-square,
+.fa-sign-out-alt {
+  color: #9d9d9d;
+  padding: 10px 14px;
+}
+.nav-item {
+  display: inline-block;
+  font-family: Glyphicons Halflings;
+}
+.nav-content {
+  margin: 0;
+}
+.fa-home:hover,
+.fa-user:hover,
+.fa-book:hover,
+.fa-sign-in-alt:hover,
+.fa-paperclip:hover,
+.fa-pen-square:hover,
+.fa-sign-out-alt:hover {
+  color: #ffffff;
+}
+.nav-item:hover {
+  background-color: #222222;
+}
+// ログイン画面
+.regisration-1 {
+  color: #666666;
+}
+.regisration-1:hover,
+.regisration-2:hover {
+  background-color: black;
+}
+
+// 新規登録画面
+.field:nth-child(even) {
+  margin: 16px 0;
+}
+.login {
+  display: inline-block;
+  margin: 11px 0px !important;
+}
+// マイページ画面
+.container {
+  margin: 0 auto;
+}
+.temp-table {
+  width:300px;
+}
+.user-info {
+  margin-right: 18px;
+}
+.part-template,
+.mybook {
+  float: left;
+}
+.part-template {
+  width: 293px;
+  height: 540px;
+}
+.mybook {
+  width: 850px;
+}
+thead {
+  line-height: 37px;
+  border-bottom: solid 1px #dddddd;
+}
+.title {
+  width: 263px;
+}
+.opinion {
+  width: 397px;
+}
+.space {
+  height: 37px;
+  width: 93px;
+}
+
+//ユーザー一覧画面
+.image,.show {
+  width: 30%;
+}
+.name {
+  width:40%;
+}
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";

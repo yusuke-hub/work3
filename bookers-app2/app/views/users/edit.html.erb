@@ -1,0 +1,19 @@
+   <% if @user.errors.any? %>
+      <%= @user.errors.count %>error
+      <%= @user.errors.full_messages.each do |msg| %>
+       <%= msg %>
+      <% end %>
+    <% end %>
+
+<h2>User info</h2>
+<%= form_for(@user,url:{controller: "users",action: "update"}) do |f| %>
+  <div class="edit-form">
+    <h4>Name</h4>
+    <%= f.text_field :name, autofocus:true %>
+    <h4>Image</h4>
+    <%= f.attachment_field :profile_image %>
+    <h4>introduction</h4>
+    <%= f.text_area :introduction %><br /><br />
+    <%= f.submit "Update User", class:"btn btn-sm btn-default" %>
+  </div>
+<% end %>

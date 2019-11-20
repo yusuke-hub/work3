@@ -1,0 +1,13 @@
+<div class="top text-left",style:>
+<h1 class="welcome">wellcome to<span class="app-name fas fa-book">Bookers</span>  !!</h1>
+<%= flash[:notice] %>
+<p class="welcome">
+  In<span class="fas fa-book app-name">Bookers,</span><br />
+  </p>
+  <p class="top-text">
+    you can share and exchange your opinions,inpressions,and emotions<br />
+    about various books!
+    </p>
+  <%= link_to "Log in", new_user_session_path,  class:"login-1 btn btn-block" %>
+  <%= link_to "Sign up", new_user_registration_path, class:"regisration-3 btn btn-block" %>
+</div>

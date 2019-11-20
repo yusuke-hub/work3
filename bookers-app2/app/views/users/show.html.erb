@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+
+
+
+<%= render 'users/user_part', book:@book, user:@user %>
+<%= flash[:notice] %>
+
+    <div class="mybook col-9">
+      <h2>Books</h2>
+          <table>
+            <thead>
+              <tr>
+              <th class="space">&nbsp;</th>
+               <th class="title">Title</th>
+               <th class="opinion">Opinion</th>
+               <th class="space">&nbsp;</th>
+              </tr>
+              </thead>
+              <tbody>
+                <% @books.each do |books| %>
+                <tr>
+                  <td class="space"><%= attachment_image_tag books.user, :profile_image, :fill,30,30, format:'jpg', fallback: "no_image.jpg" %></td>
+                  <td class="title"><%=link_to books.title, book_path(books.id) %></td>
+                  <td class="opinion"><%= books.body %></td>
+                  <td class="space">&nbsp;</td>
+                </tr>
+                <% end %>
+                </tbody>
+          </table>
+    </div>
+   </div>
+  </div>

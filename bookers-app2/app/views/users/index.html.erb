@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+
+    <%= render'users/user_part', book:@book, user:@user %>
+
+    <div class="col-9">
+    <h2>Users</h2>
+      <table>
+        <thead>
+          <tr>
+          <th class="image">image</th>
+          <th class="name">name</th>
+          <th class="show"></th>
+          </tr>
+        </thead>
+            <tbody>
+          <% @users.each do |users|%>
+            <tr>
+            <td class="image"><%= attachment_image_tag users, :profile_image, :fill,30,30, format:'jpg' %></td>
+            <td class="name"><%= users.name%></td>
+            <td class="show"><%= link_to "show" ,user_path(users.id) %></td>
+            </tr>
+          <% end %>
+            </tbody>
+      </table>
+    </div>
+  </div>
+</div>  
