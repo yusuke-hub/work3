@@ -75,11 +75,11 @@ nav {
   background-color: #222222;
 }
 .container {
-  margin: auto 185px !important;
+  margin:0 auto!important;
 }
 .nav-logo {
   font-size: 20px;
-  margin-top: 3px;
+  margin: 3px 0 0 270px;
   color: #ffffff;
 }
 .fa-home,
@@ -110,6 +110,9 @@ nav {
 }
 .nav-item:hover {
   background-color: #222222;
+}
+.navbar-right {
+  margin-right:250px!important;
 }
 // ログイン画面
 .regisration-1 {

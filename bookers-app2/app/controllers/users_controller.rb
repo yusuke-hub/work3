@@ -34,8 +34,6 @@ class UsersController < ApplicationController
     end
   end
 
-  def destroy
-  end
 
 protected
  def user_params
